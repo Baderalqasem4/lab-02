@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Bader Al Qasem`
+- **CCID:** `1761410`
 
 ## References and Resources
 
