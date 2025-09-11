@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
         deleteButton.setOnClickListener(v -> {
             int position = cityList.getCheckedItemPosition();  // get index of selected row
-            dataList.remove(position);                     // remove from your ArrayList
-            cityAdapter.notifyDataSetChanged();            // refresh the UI
-            cityList.clearChoices();                       // clear the highlight
+            dataList.remove(position); // remove from ArrayList
+            cityAdapter.notifyDataSetChanged(); // refresh the UI
+            cityList.clearChoices(); // clear the highlight
         });
     }
 }
