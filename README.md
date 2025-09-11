@@ -7,7 +7,9 @@
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+https://stackoverflow.com/questions/8504712/displaying-user-input-after-button-press
+https://stackoverflow.com/questions/10251095/change-listview-choicemode-from-singlechoice-to-multiplechoicemodal
+https://developer.android.com/develop/ui/views/components/appbar/setting-up#java
 
 ## Verbal Collaboration
 
