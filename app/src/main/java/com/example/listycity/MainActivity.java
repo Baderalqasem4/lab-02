@@ -3,11 +3,14 @@ package com.example.listycity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -68,10 +71,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         deleteButton.setOnClickListener(v -> {
-            int position = cityList.getCheckedItemPosition();  // get index of selected row
-            dataList.remove(position); // remove from ArrayList
-            cityAdapter.notifyDataSetChanged(); // refresh the UI
-            cityList.clearChoices(); // clear the highlight
+            int position = cityList.getCheckedItemPosition();
+
+            if (position == -1) { // -1 means no selection
+                return;
+            }
+
+            dataList.remove(position);                // remove from list
+            cityAdapter.notifyDataSetChanged();       // refresh UI
+            cityList.clearChoices();                  // clear highlight
         });
+
     }
 }
